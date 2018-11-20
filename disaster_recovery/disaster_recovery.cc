@@ -30,7 +30,7 @@ int main(int argc, char**) {
   // should always be enabled in release.
   // Code for reading the flag will be removed before release.
   // tracking bug: b/119627143
-  std::string flag_value = server_configurable_flags::GetServerConfigurableFlags(
+  std::string flag_value = server_configurable_flags::GetServerConfigurableFlag(
       "global_settings", "native_flags_health_check_enabled", "1");
   if (flag_value == "1") {
     LOG(INFO) << "Starting server configurable flags health check.";
