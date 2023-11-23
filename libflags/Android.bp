@@ -24,6 +24,7 @@ cc_library {
         "com.android.resolv",
     ],
     min_sdk_version: "29",
+    afdo: true,
 }
 
 // Tests
